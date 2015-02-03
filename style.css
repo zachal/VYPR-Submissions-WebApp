@@ -1,0 +1,88 @@
+/* mobile styles */
+@media handheld {
+        * {
+            max-width: device-width;
+            float: none;
+             }
+         textarea{
+            width:100%;
+             }
+	html, body {
+		font: 12px/15px sans-serif;
+		background: #fff;
+		padding: 3px;
+		color: #000;
+		margin: 0;
+		}
+	#sidebar, #footer {
+		display: none;
+		}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+		}
+	#content img { 
+		max-width: 250px;
+		}
+	.center {
+		width: 100% !important;
+		text-align: center;
+		}
+	a:link, a:visited {
+		text-decoration: underline;
+		color: #0000CC;
+		}
+	a:hover, a:active {
+		text-decoration: underline;
+		color: #660066;
+		}
+
+}
+/* iPhone-specific styles */
+@media only screen and (max-device-width: 480px) { 
+
+	html {
+		-webkit-text-size-adjust: none;
+		}
+
+}
+*{max-width: device-width;}
+@viewport {
+   width: device-width;
+}
+textarea{
+max-width:100%;
+}
+table {
+    table-layout: fixed;
+    max-width: none;
+    width: auto;
+    min-width: 100%;
+}
+ tr,td {
+    vertical-align: middle;
+}
+
+* {
+   font-family: 'Slabo 27px', serif;
+}
+form {
+    display: block;
+}
+@media all -webkit-device-pixel-ratio {
+.ss-item-required {
+    color: black;
+   -webkit-text-fill-color: #010101; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: red;
+}
+}
+@media not -webkit-device-pixel-ratio {
+.ss-item-required {
+  color: black;
+  text-shadow:
+   -1px -1px 0 red,  
+    1px -1px 0 red,
+    -1px 1px 0 red,
+     1px 1px 0 red;
+}
+}
